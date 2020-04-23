@@ -1,14 +1,14 @@
 (async () => {
-  const dgram = require("dgram");
-  const net = require("net");
-  const os = require("os");
-  const readline = require("readline");
+  const dgram = require("dgram"),
+    net = require("net"),
+    os = require("os"),
+    readline = require("readline");
 
-  const IPV4 = 4;
-  const PORT = 3000;
-  const HISTORY_REQUEST = "HISTORY_REQUEST";
-  const HISTORY_RESPONSE = "HISTORY_RESPONSE";
-  const MESSAGE = "MESSAGE";
+  const IPV4 = 4,
+    PORT = 3000,
+    HISTORY_REQUEST = "HISTORY_REQUEST",
+    HISTORY_RESPONSE = "HISTORY_RESPONSE",
+    MESSAGE = "MESSAGE";
   let history = [];
   const TCPSockets = [];
 
